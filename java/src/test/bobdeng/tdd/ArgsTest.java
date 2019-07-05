@@ -18,7 +18,7 @@ public class ArgsTest {
 
     @Test
     public void testWithNumber() {
-        Args args = new Args("l:bool,p:int,p:string,s:str", "-l true -p -9 -d /usr/local");
+        Args args = new Args("l:bool,p:int,d:str", "-l -p -9 -d /usr/local");
         assertEquals(args.getValue("l"), Boolean.FALSE);
         assertEquals(args.getValue("p"), -9);
         assertEquals(args.getValue("d"), "/usr/local");

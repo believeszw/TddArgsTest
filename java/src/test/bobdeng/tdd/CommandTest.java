@@ -22,7 +22,7 @@ public class CommandTest {
     public void testHasNegative(){
         Command command = new Command("-l -p -9 -d /user/local");
         assertNull(command.getValue("l"));
-        assertEquals(command.getValue("p"), -9);
+        assertEquals(command.getValue("p"), "-9");
         assertEquals(command.getValue("d"), "/user/local");
     }
 }

@@ -31,10 +31,10 @@ public class Command {
             if (value.length() > 2) {
                 return true;
             }
-            if (value.charAt(1) >= '0' && value.charAt(1) <= '9'){
-                return true;
-            }
             return false;
+        }
+        if (value.charAt(1) >= '0' && value.charAt(1) <= '9'){
+            return true;
         }
         return false;
     }
